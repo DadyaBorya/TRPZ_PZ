@@ -1,0 +1,16 @@
+.footer-main {
+    padding: 45px 0;
+    bottom: 0;
+    background: rgb(56, 71, 85);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-main > div {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+}

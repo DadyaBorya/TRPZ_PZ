@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background: #3363d4;
+    border-bottom: 3px solid red;
+}
+
+.blog-h1 {
+    margin: 0;
+}
+
+.blog-h3 {
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.blog > a {
+    text-decoration: none;
+    color: black;
+}
+
+.auth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth > a {
+    color: black;
+    text-decoration: none;
+}
+
+.auth-login {
+    padding: 0 20px;
+}

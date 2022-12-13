@@ -1,0 +1,120 @@
+.container {
+    border: 1px solid gray;
+    margin: 5px 5px;
+    padding: 0 35px;
+}
+
+.row {
+    padding: 20px 0;
+}
+
+.row{
+    border-bottom: 5px solid blue;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.row > div {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: row;
+}
+
+.desc-line > a, span {
+    display: flex;
+    margin-top: auto;
+}
+
+.desc-line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.desc-line > h3 {
+    margin: 0;
+    padding-right: 5px;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.name-author {
+    margin: 0;
+    font-size: 18px;
+    padding-bottom: 10px;
+}
+
+.short-desc {
+    display: flex;
+    margin: 0;
+    margin-left: auto;
+    font-size: 12px;
+    float: right;
+    color: green;
+    text-decoration:underline;
+    margin-bottom: 5px;
+}
+
+.rigth-side {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.full-desc {
+    display: flex;
+    flex-direction: column !important;
+}
+
+.short-desc-absolute {
+    position: absolute;
+    right: 0;
+}
+
+.year {
+    margin-bottom: 5px;
+}
+
+.part-h3, .part-a > h3 {
+    margin: 0;
+    margin-bottom: 5px;
+} 
+
+.part-h3 {
+    margin-top: 20px;
+    text-decoration: underline;
+    color: palevioletred
+}
+
+.part {
+    padding-left: 30px;
+}
+
+.part-a :hover {
+    color: green;
+    text-decoration: none;
+}
+
+.part-a {
+    font-size: 20px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+.part-desc {
+    display: flex;
+    flex-direction: column;
+}

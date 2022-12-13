@@ -1,0 +1,43 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+}
+
+.login-text-h3 {
+    margin: 0;
+    padding: 15px 0;
+}
+
+.login-text {
+    background: rgb(126, 126, 255);
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.login-form {
+    border: 1px solid gray;
+}
+
+.login-inputs {
+    margin-top: 80px;
+    margin-left: 15px;
+    margin-right: 50px;
+}
+
+.login-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-input > input {
+    margin-left: 10px;
+    
+    margin-bottom: 10px;
+}
+
+.login-button {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 60px;
+}

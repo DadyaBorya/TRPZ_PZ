@@ -1,0 +1,27 @@
+.card {
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    margin-top: 15px;
+    padding: 20px 30px;
+    display: flex;
+    margin-bottom: auto;
+}
+
+.card-image {
+    margin-right: 20px;
+}
+
+.card-main-h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card-main-text {
+    text-align: justify;
+}
+
+.card-main-a {
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+}
