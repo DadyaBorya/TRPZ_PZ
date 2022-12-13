@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/registration.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+</head>
+<header>
+    <div class="header">
+        <div class="blog">
+            <a href="index.html">
+                <h1 class="blog-h1">Мій особистий блог</h1>
+                <h3 class="blog-h3">Борис Огородній</h2>
+            </a>
+        </div>
+        <div class="auth">
+            <a href="login.html" class="auth-login">Вхід</a>
+            <a href="registration.html" class="auth-register">Реєстрація</a>
+        </div>
+    </div>
+</header>
+
+<body>
+    <div class="login-container">
+        <form class="login-form" action="post">
+            <div class="login-text">
+                <h3 class="login-text-h3">Реєстрація користувача</h2>
+            </div>
+            <div class="login-inputs">
+                <div class="login-input">
+                    <label for="surnameInput">Прізвище</label>
+                    <input type="text" id="surnameInput">
+                </div>
+                <div class="login-input">
+                    <label for="nameInput">Ім'я</label>
+                    <input type="text" id="nameInput">
+                </div>
+                <div class="login-input">
+                    <label for="userInput">Логін</label>
+                    <input type="text" id="userInput">
+                </div>
+                <div class="login-input">
+                    <label for="passwordInput">Навчальна група</label>
+                    <input type="text" id="passwordInput">
+                </div>
+                <div class="login-input">
+                    <label for="passwordInput">Пароль</label>
+                    <select name="group_select" id="group_select" class="group_select">
+                        <option value="201">201</option>
+                        <option value="202">202</option>
+                        <option value="203" selected>203</option>
+                    </select>
+                </div>
+                <div class="login-input">
+                    <label for="correctPasswordInput">Підтвердження паролю</label>
+                    <input type="text" id="correctPasswordInput">
+                </div>
+                <div class="login-button">
+                    <button type="submit">Зареєструватися</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<footer>
+    <div class="footer-main">
+        <div class="">Всі права захищені.</div>
+        <div class="">Розробник: курсант 203 навчальної групи Огородній Б.О.</div>
+    </div>
+</footer>
+
+</html>
