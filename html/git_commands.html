@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Git commands</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
@@ -137,7 +137,25 @@
                 <div class="command">$ git reset --hard</div>
             </div>
         </div>
-        <div class="column"></div>
+        <div class="column">
+            <h2 class="info_h2 color-orange">Make a change</h2>
+            <div class="block_command">
+                <div class="command_info">Get the lastest changes from origin (no merge)</div>
+                <div class="command">$ git fetch</div>
+            </div>
+            <div class="block_command">
+                <div class="command_info">Fetch the lastest changes from origin and merge</div>
+                <div class="command">$ git pull</div>
+            </div>
+            <div class="block_command">
+                <div class="command_info">Fetch the lastest changes from origin and rebase</div>
+                <div class="command">$ git pull --rebase</div>
+            </div>
+            <div class="block_command">
+                <div class="command_info">Push local changes to the origin</div>
+                <div class="command">$ git push</div>
+            </div>
+        </div>
     </div>
 </body>
 <footer>
