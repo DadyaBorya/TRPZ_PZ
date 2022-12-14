@@ -1,0 +1,61 @@
+.container {
+    max-width: 1600px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 100%;
+}
+
+.color-blue {
+    color: rgb(106, 106, 235);
+}
+
+.info_h2 {
+    margin-bottom: 10px;
+}
+
+.command_info {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.command {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.last_block_command {
+    margin-bottom: 60px;
+}
+
+.color-navy {
+    color: navy;
+}
+
+.color-salat {
+    color: greenyellow;
+}
+
+.few_command {
+    margin-bottom: 7px !important;
+}
+
+.color-green {
+    color: green;
+}
+
+.color-orange {
+    color: orange;
+}
+
+.color-red {
+    color: red;
+}
