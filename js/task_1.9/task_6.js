@@ -21,6 +21,6 @@ const hashMap = {
 }
 
 
-console.log("monthNumber", monthNumber)
-console.log(hashMap[monthNumber])
+alert("monthNumber " + monthNumber)
+alert(hashMap[monthNumber])
 

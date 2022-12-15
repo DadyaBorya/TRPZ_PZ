@@ -10,4 +10,4 @@ const hashMap = {
     7: "Sunday"
 }
 
-console.log(weekNumber, "->", hashMap[weekNumber])
+alert(weekNumber + " -> " + hashMap[weekNumber])
