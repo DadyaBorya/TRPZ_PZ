@@ -1,4 +1,4 @@
-const monthNumber = Math.floor(Math.random() * 12) + 1
+const monthNumber = parseInt(prompt("Enter month number"))
 let month = class {
     constructor(name, season) {
         this.name = name;
