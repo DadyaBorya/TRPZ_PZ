@@ -1,5 +1,4 @@
-const n = 5;
-
+const n = parseInt(prompt("Enter n"))
 printPyramid90Deg(n)
 console.log()
 printPyramid(n)

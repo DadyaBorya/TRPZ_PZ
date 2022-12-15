@@ -1,4 +1,4 @@
-const weekNumber = Math.floor(Math.random() * 7) + 1
+const weekNumber = parseInt(prompt("Enter week number"))
 
 const hashMap = {
     1: "Monday",
@@ -10,4 +10,4 @@ const hashMap = {
     7: "Sunday"
 }
 
-console.log(weekNumber, "->", hashMap[weekNumber])
+alert(weekNumber + " -> " + hashMap[weekNumber])
