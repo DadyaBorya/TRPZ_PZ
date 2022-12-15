@@ -1,12 +1,9 @@
 function createGreetable (str) {
-
-    const result = str,
-        greet = function (greeting) {
-            return `${greeting}, ${str}!`
-        };
     return {
         str: str,
-        greet: greet
+        greet: function (greeting) {
+            return `${greeting}, ${str}!`
+        }
     }
 }
 
