@@ -19,7 +19,9 @@ class Desk {
                 row = !row
             }
             count--;
-            row = !row
+            if(this.width % 2 === 0){
+                row = !row
+            }
             console.log(str)
         }
 
@@ -31,7 +33,7 @@ class Desk {
 }
 
 function main(){
-    let desk = new Desk(8, 8)
+    let desk = new Desk(10, 10)
     desk.print()
 }
 main()
