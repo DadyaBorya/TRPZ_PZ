@@ -10,6 +10,6 @@ function play() {
 
      setTimeout( () => player.play('sounds/smeh-1.mp3', { timeout: 30000 }, function(err){
         if (err) console.log(`Could not play sound: ${err}`);
-    }), 4000)
+    }), 8000)
 }
 play()
