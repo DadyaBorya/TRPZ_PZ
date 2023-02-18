@@ -1,15 +1,14 @@
-const n = 100;
-let i = 1;
-while (i <= n) {
-    let j = 2;
-    while (j <= i) {
-        if (i % j === 0 && j < i) {
-            break;
-        } else if (j === i) {
-            console.log(i);
+let count = 0
+let i, j;
+for (j = 2; j <= 100; j++) {
+    for (i = 1; i <= j; i++) {
+        if (j % i === 0) {
+            count++
         }
-        j++;
     }
-    i++;
-}
+    if(count === 2) {
+        console.log(j)
+    }
+    count = 0
 
+}

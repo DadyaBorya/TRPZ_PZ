@@ -1,3 +1,3 @@
-const tc = 30
+const tc = prompt("Enter tc")
 const tf = (9 / 5) * tc + 32
-console.log(tc, "->", tf)
+alert(tc, "->", tf)

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+<div class="header">
+    <div>Вітаємо, <%= surname %> <%= name %></div>
+    <h3>Тест</h3>
+</div>
+<form method="post" action="/end-test" class="container">
+    <% for(var i = 0; i < tests.length; i++) { %>
+        <div class="test-block">
+            Запитання <%= i + 1 %>
+            <div><%= tests[i].text %></div>
+            <div>
+                <label>
+                    <input value="a" required name="question<%= i %>" type="radio">
+                    a. <%= tests[i].a %>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input value="b" required name="question<%= i %>" type="radio">
+                    b. <%= tests[i].b %>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input value="c" required name="question<%= i %>" type="radio">
+                    c. <%= tests[i].c %>
+                </label>
+            </div>
+            <div>
+                <label>
+                    <input value="d" required name="question<%= i %>" type="radio">
+                    d. <%= tests[i].d %>
+                </label>
+            </div>
+        </div>
+    <% } %>
+    <button class="end-btn">Завершити тест</button>
+    <input type="text" name="name" hidden="hidden" value="<%= name %>">
+    <input type="text" name="surname" hidden="hidden" value="<%= surname %>">
+</form>
+</body>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-shrink: 0;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .test-block {
+        padding: 20px;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .end-btn {
+        display: flex;
+        margin-top: auto;
+        padding: 20px;
+        justify-content: center;
+        background-color: green;
+        color: white;
+    }
+</style>
+</html>

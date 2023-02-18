@@ -1,11 +1,14 @@
-function createGreetable (str) {
-    return {
-        str: str,
-        greet: function (greeting) {
-            return `${greeting}, ${str}!`
-        }
+const greetablePrototype = {
+    greetable: function(greeting) {
+      return `${greeting}, ${this.str}!`
     }
 }
 
-const g = createGreetable('Oleg');
-console.log(g.greet("Hello"))
+function createGreetable(str) {
+    this.str = str;
+    Object.setPrototypeOf(this, greetablePrototype)
+    return this;
+}
+
+const t = new createGreetable("world");
+console.log(t.greetable("hello"))

@@ -1,23 +1,18 @@
 const monthNumber = parseInt(prompt("Enter month number"))
-let month = class {
-    constructor(name, season) {
-        this.name = name;
-        this.season = season;
-    }
-};
+
 const hashMap = {
-    1: new month("January", "Winter"),
-    2: new month("February", "Winter"),
-    3: new month("March", "Spring"),
-    4: new month("April", "Spring"),
-    5: new month("May", "Spring"),
-    6: new month("June", "Summer"),
-    7: new month("July", "Summer"),
-    8: new month("August", "Summer"),
-    9: new month("September", "Autumn"),
-    10: new month("October", "Autumn"),
-    11: new month("November", "Autumn"),
-    12: new month("December", "Winter"),
+    1: {month: "January", season: "Winter"},
+    2: {month: "February", season: "Winter"},
+    3: {month: "March", season: "Spring"},
+    4: {month: "April", season: "Spring"},
+    5: {month: "May", season: "Spring"},
+    6: {month: "June", season: "Summer"},
+    7: {month: "July", season: "Summer"},
+    8: {month: "August", season: "Summer"},
+    9: {month: "September", season: "Autumn"},
+    10: {month: "October", season: "Autumn"},
+    11: {month: "November", season: "Autumn"},
+    12: {month: "December", season: "Winter"},
 }
 
 

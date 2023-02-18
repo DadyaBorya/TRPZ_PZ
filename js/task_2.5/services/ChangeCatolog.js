@@ -7,8 +7,14 @@ import path from "path";
 import fs from "fs";
 
 let changedPath = ""
+let delimiter = ""
+
 
 export async function showReplace() {
+    if (!delimiter) {
+        setDelimiter()
+    }
+
     console.clear()
     currentPath()
     await printStackEvents()
@@ -56,7 +62,8 @@ function replacePath() {
     if (changedPath === "") {
         changedPath = mainPath
     }
-    const index = mainPath.lastIndexOf("/")
+
+    const index = mainPath.lastIndexOf(delimiter)
     if (index === -1 || index === 0) {
         console.log("Кінець!")
         return mainPath
@@ -71,6 +78,17 @@ export function replacePathWithFolder(folder) {
     }
 
     return newPath
+}
+
+function setDelimiter() {
+    const osValue = process.platform;
+    if (osValue === 'darwin') {
+        delimiter = "/"
+    } else if (osValue === 'win32') {
+        delimiter = "\\"
+    } else if (osValue === 'linux') {
+        delimiter = "/"
+    }
 }
 
 export async function getAllFoldersFromMainPath() {
