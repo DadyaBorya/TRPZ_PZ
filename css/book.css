@@ -89,8 +89,7 @@
 }
 
 .part-h3, .part-a > h3 {
-    margin: 0;
-    margin-bottom: 5px;
+    margin: 0 0 5px;
 } 
 
 .part-h3 {

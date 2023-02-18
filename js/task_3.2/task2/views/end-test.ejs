@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+<div class="header">
+    <div> <%= surname %> <%= name %></div>
+    <div>Загальна кількість запитань: <%= arr.length%></div>
+    <div>Правильних відповідей: <%= count%></div>
+    <h3>Тест</h3>
+</div>
+<form method="get" action="/" class="container">
+    <% for(var i = 0; i < arr.length; i++) { %>
+        <div class="test-block">
+            Запитання <%= i + 1 %>
+            <div class="<%= arr[i].success ? "green" : "red"%> "> <%= arr[i].text %></div>
+            <div>
+                <label class="<%=arr[i]["a_color"]%>">
+                    <input <%= arr[i].userAnswer === "a" ? "checked" : ""%>  value="a" disabled name="question<%= i %>" type="radio">
+                    a. <%= arr[i].a %>
+                </label>
+            </div>
+            <div>
+                <label class="<%= arr[i]["b_color"]%>">
+                    <input <%= arr[i].userAnswer === "b" ? "checked" : ""%> value="b" disabled name="question<%= i %>" type="radio">
+                    b. <%= arr[i].b %>
+                </label>
+            </div>
+            <div>
+                <label class="<%= arr[i]["c_color"]%>">
+                    <input <%= arr[i].userAnswer === "c" ? "checked" : ""%> value="c" disabled name="question<%= i %>" type="radio">
+                    c. <%= arr[i].c %>
+                </label>
+            </div>
+            <div>
+                <label class="<%= arr[i]["d_color"]%>">
+                    <input <%= arr[i].userAnswer === "d" ? "checked" : ""%> value="d" disabled name="question<%= i %>" type="radio">
+                    d. <%= arr[i].d %>
+                </label>
+            </div>
+        </div>
+    <% } %>
+    <button class="end-btn">Повернутися</button>
+</form>
+</body>
+
+<style>
+    .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-shrink: 0;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .test-block {
+        padding: 20px;
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .end-btn {
+        display: flex;
+        margin-top: auto;
+        padding: 20px;
+        justify-content: center;
+        background-color: green;
+        color: white;
+    }
+    .green {
+        color: green;
+    }
+
+    .red {
+        color: red;
+    }
+
+    .blue {
+        color: blue;
+    }
+</style>
+</html>

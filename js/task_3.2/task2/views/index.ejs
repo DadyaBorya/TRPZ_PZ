@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<div class="container">
+    <div class="form">
+        <form action="/create-user" method="post">
+            <h1>Введіть свої дані</h1>
+            <label class="input">
+                Ім'я
+                <input required name="name" type="text" placeholder="Ім'я">
+            </label>
+            <label class="input">
+                Фамілія
+                <input required name="surname" type="text" placeholder="Фамілія">
+            </label>
+            <button id="start-btn" class="start-btn">
+                Розпочати тест
+            </button>
+        </form>
+    </div>
+
+</div>
+</body>
+<style>
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .form {
+        border: 5px solid seagreen;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        width: 250px;
+    }
+
+    .start-btn {
+        margin-top: 5px;
+        background-color: #3363d4;
+        color: white;
+    }
+</style>
+</html>

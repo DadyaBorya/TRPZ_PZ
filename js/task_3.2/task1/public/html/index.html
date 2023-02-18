@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 1</title>
+</head>
+<body>
+<button id="btn">
+  Click on me!!!
+</button>
+<script>
+    const btn = document.getElementById("btn");
+    btn.addEventListener("click", () => {
+        fetch("http://localhost:5000/client_data", {method: "POST"})
+            .then((response) => response.json())
+            .then((data) => console.log(data));
+    })
+</script>
+</body>
+</html>

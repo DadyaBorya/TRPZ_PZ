@@ -28,7 +28,7 @@ function maxElSortedArr(arr){
 }
 
 function minElSortedAr(arr){
-    return arr[1]
+    return arr[0]
 }
 
 function sumArr(arr){

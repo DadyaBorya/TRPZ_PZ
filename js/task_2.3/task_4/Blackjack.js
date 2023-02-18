@@ -1,5 +1,4 @@
 import rLine from "readline";
-import path from 'path';
 
 const cmd = rLine.createInterface(process.stdin, process.stdout)
 

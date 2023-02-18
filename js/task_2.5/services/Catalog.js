@@ -10,7 +10,6 @@ export async function showCatalog(){
     console.clear()
     const base = path.parse(mainPath).base
     fsEmitter.emit("showCatalog", base)
-
     await printStackEvents()
     currentPath()
     let high = 0;
@@ -35,5 +34,6 @@ export async function showCatalog(){
 
     await getInputRange(textMainMenu, high, high)
     fsEmitter.emit("exitCatalog", base)
+
     await printMenu()
 }

@@ -29,11 +29,12 @@ function switchMenu(number, choose) {
 
     if(number === choose){
         console.log("Ви виграли")
-        console.log(`Вибрали ${number === 1 ? "Орел" : "Решка"} - Випало ${choose === 1 ? "Орел" : "Решка"}`)
     } else{
         console.log("Ви програли")
-        console.log(`Вибрали ${number === 1 ? "Орел" : "Решка"} - Випало ${choose === 1 ? "Орел" : "Решка"}`)
     }
+
+    console.log(`Вибрали ${number === 1 ? "Орел" : "Решка"} - Випало ${choose === 1 ? "Орел" : "Решка"}`)
+
     coinGame()
 }
 

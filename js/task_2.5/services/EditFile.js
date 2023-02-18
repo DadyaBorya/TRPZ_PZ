@@ -194,6 +194,5 @@ async function editRow(fileData, fileName) {
 }
 
 async function saveFile(fileData, fileName) {
-
     await fs.writeFileSync(path.join(mainPath, fileName), fileData.join("\n"))
 }
